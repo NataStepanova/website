@@ -1,0 +1,6 @@
+tmp
+*.lock
+cookbooks
+.idea
+.vagrant
+www/hw2/files
