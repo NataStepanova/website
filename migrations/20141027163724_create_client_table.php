@@ -12,24 +12,24 @@ class CreateClientTable extends AbstractMigration
      *
      * Uncomment this method if you would like to use it.
      *
-    public function change()
-    {
-    }
-    */
-    
+     * public function change()
+     * {
+     * }
+     */
+
     /**
      * Migrate Up.
      */
     public function up()
     {
-      $sql = <<<SQL
-CREATE TABLE IF NOT EXISTS `client` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `user_id` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+        $sql = <<<SQL
+    CREATE TABLE IF NOT EXISTS `client` (
+    `id` int(11) NOT NULL AUTO_INCREMENT,
+    `user_id` int(11) NOT NULL,
+    PRIMARY KEY (`id`)
+    ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 SQL;
-      $this->execute($sql);    
+        $this->execute($sql);
     }
 
     /**

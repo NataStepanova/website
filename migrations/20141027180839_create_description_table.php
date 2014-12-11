@@ -31,9 +31,10 @@ CREATE TABLE IF NOT EXISTS `description_room` (
   `quantity` int(11) NOT NULL,
   `cost` int(11) NOT NULL,
   `description` text NOT NULL,
+  `image` varchar(128) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `type` (`type`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=103 ;
 SQL;
         $this->execute($sql);
     }
